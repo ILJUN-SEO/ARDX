@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IJ_Editor", "Project\Project.vcxproj", "{872E26B1-0B56-4AC2-B811-429BD6280ACA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IJ_Editor_Windows", "Project\Project.vcxproj", "{872E26B1-0B56-4AC2-B811-429BD6280ACA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IJ_SOURCE", "IJ_SOURCE\IJ_SOURCE.vcxitems", "{15D0FB82-83C9-43C7-88EC-9D63D9793DDE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IJ_Engine_Source", "IJ_SOURCE\IJ_SOURCE.vcxitems", "{15D0FB82-83C9-43C7-88EC-9D63D9793DDE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IJ_Engine_Shaders_Source", "IJ_Shaders\IJ_Shaders.vcxitems", "{59CC59A5-9F6E-4A8B-BCF3-F1E35E6B28C5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IJ_Editor_Soruce", "IJ_Editor_Soruce\IJ_Editor_Soruce.vcxitems", "{085BBD51-463A-46F9-A311-02D8E5111560}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IJ_Game_Windows", "Game_Windows\Game_Windows.vcxproj", "{4E31A9A5-93DA-4528-824D-B4CAC555F087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +29,14 @@ Global
 		{872E26B1-0B56-4AC2-B811-429BD6280ACA}.Release|x64.Build.0 = Release|x64
 		{872E26B1-0B56-4AC2-B811-429BD6280ACA}.Release|x86.ActiveCfg = Release|Win32
 		{872E26B1-0B56-4AC2-B811-429BD6280ACA}.Release|x86.Build.0 = Release|Win32
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Debug|x64.ActiveCfg = Debug|x64
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Debug|x64.Build.0 = Debug|x64
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Debug|x86.ActiveCfg = Debug|Win32
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Debug|x86.Build.0 = Debug|Win32
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Release|x64.ActiveCfg = Release|x64
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Release|x64.Build.0 = Release|x64
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Release|x86.ActiveCfg = Release|Win32
+		{4E31A9A5-93DA-4528-824D-B4CAC555F087}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -31,7 +45,10 @@ Global
 		SolutionGuid = {2BD3DA43-2E45-40AB-A37C-99E9883ED312}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		IJ_Editor_Soruce\IJ_Editor_Soruce.vcxitems*{085bbd51-463a-46f9-a311-02d8e5111560}*SharedItemsImports = 9
 		IJ_SOURCE\IJ_SOURCE.vcxitems*{15d0fb82-83c9-43c7-88ec-9d63d9793dde}*SharedItemsImports = 9
-		IJ_SOURCE\IJ_SOURCE.vcxitems*{872e26b1-0b56-4ac2-b811-429bd6280aca}*SharedItemsImports = 4
+		IJ_SOURCE\IJ_SOURCE.vcxitems*{4e31a9a5-93da-4528-824d-b4cac555f087}*SharedItemsImports = 4
+		IJ_Shaders\IJ_Shaders.vcxitems*{59cc59a5-9f6e-4a8b-bcf3-f1e35e6b28c5}*SharedItemsImports = 9
+		IJ_Editor_Soruce\IJ_Editor_Soruce.vcxitems*{872e26b1-0b56-4ac2-b811-429bd6280aca}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

@@ -98,4 +98,5 @@ namespace IJ::renderer
 		//trianglePSBlob->Release();
 		//trianglePSShader->Release();
 		//triangleLayout->Release();
+	}
 }

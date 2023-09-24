@@ -4,6 +4,7 @@
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
     <ItemsProjectGuid>{15d0fb82-83c9-43c7-88ec-9d63d9793dde}</ItemsProjectGuid>
+    <ItemsProjectName>IJ_Engine_Source</ItemsProjectName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -16,29 +17,49 @@
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Application.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Component.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_ConstantBuffer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Engine.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Entity.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Enums.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_GameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Graphics.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_GraphicsDevice_DX11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Input.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Layer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Math.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_MeshRenderer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Renderer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Resource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_SceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Script.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Shader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Time.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Application.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Component.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_ConstantBuffer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Entity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_GameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_GraphicsDevice_DX11.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Input.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Layer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Math.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_MeshRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Renderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Resource.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Scene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_SceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Script.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Shader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Time.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Transform.cpp" />
   </ItemGroup>
 </Project>

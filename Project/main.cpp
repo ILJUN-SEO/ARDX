@@ -3,7 +3,9 @@
 
 #include "framework.h"
 #include "Editor_Windows.h"
-#include "IJ_Application.h"
+//#include "IJ_Application.h"
+#include "..\\IJ_SOURCE\\IJ_Application.h"
+#include "..\\Game_Windows\\IJ_LoadScene.h"
 
 #define MAX_LOADSTRING 100
 
@@ -11,6 +13,7 @@
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
 WCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입니다.
 WCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
+IJ::Application application;
 
 // 이 코드 모듈에 포함된 함수의 선언을 전달합니다:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -44,12 +47,24 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     MSG msg;
 
     // 기본 메시지 루프입니다:
-    while (GetMessage(&msg, nullptr, 0, 0))
+    while (true)
     {
-        if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
+        if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
         {
-            TranslateMessage(&msg);
-            DispatchMessage(&msg);
+            if (WM_QUIT == msg.message)
+                break;
+
+            if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
+            {
+                TranslateMessage(&msg);
+                DispatchMessage(&msg);
+            }
+        }
+
+        else
+        {
+            // 엔진의 매 프레임마다 실행
+            application.Run();
         }
     }
 
@@ -108,6 +123,10 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
+
+   application.SetWindow(hWnd, 1600, 900);
+   application.Initialize();
+   IJ::InitializeScenes();
 
    return TRUE;
 }

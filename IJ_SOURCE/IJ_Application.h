@@ -37,7 +37,7 @@ namespace IJ
 
 	private:
 		bool initialized = false;
-		std::unique_ptr<ya::graphics::GraphicsDevice_DX11> graphicsDevice;
+		std::unique_ptr<IJ::graphics::GraphicsDevice_DX11> graphicsDevice;
 
 		HWND mHwnd;
 		UINT mWidth;

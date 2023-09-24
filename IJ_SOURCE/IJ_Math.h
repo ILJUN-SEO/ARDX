@@ -23,7 +23,6 @@
 using namespace DirectX;
 using namespace DirectX::PackedVector;
 
-
 namespace IJ::math
 {
     struct Vector2;

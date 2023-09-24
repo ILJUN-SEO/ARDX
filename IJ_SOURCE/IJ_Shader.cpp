@@ -3,7 +3,7 @@
 #include "IJ_GraphicsDevice_DX11.h"
 
 
-namespcae IJ::graphics
+namespace IJ::graphics
 {
 	Shader::Shader()
 		: mTopology(D3D_PRIMITIVE_TOPOLOGY::D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST)

@@ -27,7 +27,7 @@ namespace IJ
 		static T* Load(const std::wstring& key, const std::wstring& path)
 		{
 			// 키값으로 탐색
-			T* resource = Resources::Find<T>(key);
+			T* resource = ResourceManager::Find<T>(key);
 			if (nullptr != resource)
 			{
 				// 해당키로 이미 로딩된게 있으면 해당 리소스를 반환
