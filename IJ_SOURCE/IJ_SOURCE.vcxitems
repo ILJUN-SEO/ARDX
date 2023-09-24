@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{15d0fb82-83c9-43c7-88ec-9d63d9793dde}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Application.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_ConstantBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Engine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Entity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Enums.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Graphics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_GraphicsDevice_DX11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Math.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Renderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Application.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_ConstantBuffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Entity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_GraphicsDevice_DX11.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Math.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Renderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Resource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Shader.cpp" />
+  </ItemGroup>
+</Project>

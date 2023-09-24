@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{e525523b-10e9-4b6e-91e8-8b204bd4ea7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{7f908d08-5568-4469-9089-9a3b1c3e7edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics\API">
+      <UniqueIdentifier>{ae2ff547-8419-42a4-a8b6-65a14457daf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Common">
+      <UniqueIdentifier>{728c6f06-b81b-4008-9ed8-a0d24156e5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\High Level Interface">
+      <UniqueIdentifier>{3bd7c5c5-b5a5-4f70-b4d2-f17f9987744c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Helpers">
+      <UniqueIdentifier>{0a7518a1-8bcd-4bfc-86d2-92fdeb1f12d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource">
+      <UniqueIdentifier>{0663115b-d1fa-446d-b5cb-65789961c594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource\Manager">
+      <UniqueIdentifier>{d5134c08-78ff-4e3c-80d3-7e0a24f863cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource\Mesh">
+      <UniqueIdentifier>{10b40ee9-bd56-480f-a419-6d145064a906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\GameObject">
+      <UniqueIdentifier>{7ef2b5cd-9115-42b1-904e-264d52ad9602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource\Shader">
+      <UniqueIdentifier>{30645f9c-f666-4e57-82cd-39c976e0ae42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Application.cpp">
+      <Filter>Engine\High Level Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_GraphicsDevice_DX11.cpp">
+      <Filter>Engine\Graphics\API</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Renderer.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Math.cpp">
+      <Filter>Engine\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Mesh.cpp">
+      <Filter>Engine\Resource\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Resource.cpp">
+      <Filter>Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Entity.cpp">
+      <Filter>Engine\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Shader.cpp">
+      <Filter>Engine\Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_ConstantBuffer.cpp">
+      <Filter>Engine\Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.cpp">
+      <Filter>Engine\Resource\Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Application.h">
+      <Filter>Engine\High Level Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_GraphicsDevice_DX11.h">
+      <Filter>Engine\Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Graphics.h">
+      <Filter>Engine\Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Renderer.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Enums.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Engine.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Math.h">
+      <Filter>Engine\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Mesh.h">
+      <Filter>Engine\Resource\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Resource.h">
+      <Filter>Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Entity.h">
+      <Filter>Engine\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Shader.h">
+      <Filter>Engine\Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_ConstantBuffer.h">
+      <Filter>Engine\Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.h">
+      <Filter>Engine\Resource\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
