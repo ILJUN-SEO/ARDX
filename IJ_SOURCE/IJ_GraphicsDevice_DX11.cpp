@@ -208,7 +208,7 @@ namespace IJ::graphics
         , ID3DBlob** ppCode)
     {
         std::filesystem::path path = std::filesystem::current_path().parent_path();
-        path += "\\Shaders_SOURCE\\";
+        path += "\\IJ_Shaders\\";
 
         std::wstring filePath(path.c_str());
         filePath += fileName;
