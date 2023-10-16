@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CS">
+      <UniqueIdentifier>{ac42dc79-8eb6-4df9-8992-1c4203bc5fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS">
+      <UniqueIdentifier>{ca849fcd-8e66-4aa7-acf6-c5107bb3f59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GS">
+      <UniqueIdentifier>{7d6e8310-0a5b-4396-a813-effa62edc80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HS">
+      <UniqueIdentifier>{b47d8f96-6c0e-49e9-a337-ce24f970f7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PS">
+      <UniqueIdentifier>{a80afb08-0cbc-4453-8c19-ab6077a3e491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VS">
+      <UniqueIdentifier>{b7090c1f-4a95-4a6e-bc17-09f27a8bb57a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

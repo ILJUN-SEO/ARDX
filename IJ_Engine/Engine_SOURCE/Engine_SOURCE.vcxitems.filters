@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{43949854-7104-45c9-890c-e8d1e45e915a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{4a6f7738-9015-4fab-a385-5ca2653dd40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{9989eb98-2cb1-42f7-8adb-46180dcb9399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{eca56731-7503-4696-a0dd-445f948abed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{e24e6a72-3ae1-4cd7-b861-ea46298ce8af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_High Level Interface">
+      <UniqueIdentifier>{79183969-fb1a-4c78-98aa-8041cacb80da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{ade9eb45-e0d1-4217-96af-e2b5b0b0f478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{3e22d487-a7be-45de-8ffe-2cd2f48329f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{43b1e278-c94d-4cdf-9c54-1acd01c2fddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\API">
+      <UniqueIdentifier>{da6d11b8-b8f8-4db8-8b07-925c80dc54ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\Input">
+      <UniqueIdentifier>{35a747ad-e7a3-4476-9850-ff26a68b8940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\Mathematics">
+      <UniqueIdentifier>{94a46d18-4a21-44cc-b733-24d383503273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\Time">
+      <UniqueIdentifier>{f25bace7-5544-4a9f-9e65-985ea46ff977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Mesh">
+      <UniqueIdentifier>{91f678bf-6eef-4b76-a5d2-84ce7e4fcdab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Shader">
+      <UniqueIdentifier>{f7ebf213-436a-4538-b6c7-5c2900c0d7a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\_Manager">
+      <UniqueIdentifier>{894f2a71-4613-4cd3-bc9d-9b6a03eea246}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Engine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Graphics.h">
+      <Filter>Graphics\API</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Input.h">
+      <Filter>Helpers\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Math.h">
+      <Filter>Helpers\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_Time.h">
+      <Filter>Helpers\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.h">
+      <Filter>Resource\_Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Input.cpp">
+      <Filter>Helpers\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Math.cpp">
+      <Filter>Helpers\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_Time.cpp">
+      <Filter>Helpers\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJ_ResourceManager.cpp">
+      <Filter>Resource\_Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
